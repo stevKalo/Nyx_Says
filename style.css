@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  color: #eaeaea;
+  padding: 5vh 10vw;
+}
+
+.nyx {
+  flex: 1;
+  margin-left: 5vw;
+  max-height: 40vh;
+  padding: 0;
+}
+
+.nyxSpeak {
+  min-height: 10vh;
+  text-align: left;
+}
+
+.container textarea {
+  background-color: #222222;
+  color: #eaeaea;
+  font-family: "VT323", monospace;
+  font-size: 20px;
+  border: #eaeaea 2px solid;
+  resize: none;
+  opacity: 0.5;
+  animation-duration: .6s;
+}
+
+.container textarea:hover,
+.send:hover {
+    opacity: 1;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.send {
+  background-color: #eaeaea;
+  color: #222222;
+  font-size: 20px;
+  opacity: 0.5;
+  animation-duration: .6s;
+  min-width: 50px;
+  border: none;
+}
+
+
+/*
+* {
+  border: 1px solid red;
+}
