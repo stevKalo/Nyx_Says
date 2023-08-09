@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nyx-Says</title>
+	<style>
+  @import url("https://use.typekit.net/ref2cqd.css");
+</style>
+</head>
+
+<body align= "center">
+	<h1 class="tk-lores-15-bold-alt-oakland" style="font-size: 60px" >NYX SAYS</h1>
+	
+	<button onclick="typeWriter()">Hello There</button>
+	
+	<p id="demo"></p>
+	
+	<script>
+		var i = 0;
+		var txt = 'Curious huh?;
+		var speed = 50;
+		
+		function typeWriter() {if (i < txt.length){document.getElementById("demo").innerHTML += txt.charAt (i); i++; setTimeout(typeWriter, speed)}}
+		
+	
+	</script>
+	
+	
+
+	
+
+</body>
+</html>
