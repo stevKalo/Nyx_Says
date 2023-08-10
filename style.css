@@ -18,8 +18,9 @@ body {
 }
 
 .nyxSpeak {
-  min-height: 10vh;
+  display: block;
   text-align: left;
+  height: 20vh;
 }
 
 .container textarea {
@@ -30,31 +31,42 @@ body {
   border: #eaeaea 2px solid;
   resize: none;
   opacity: 0.5;
-  animation-duration: .6s;
+  transition: 0.3s;
 }
 
 .container textarea:hover,
-.send:hover {
-    opacity: 1;
+.send:hover,
+.listen:hover {
+  opacity: 1;
+}
+
+.container textarea:focus,
+.send:focus,
+.listen:focus {
+  opacity: 1;
 }
 
 .buttons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  gap: 5px;
 }
 
-.send {
+.send,
+.listen {
+  flex: 1 1 auto;
   background-color: #eaeaea;
   color: #222222;
   font-size: 20px;
   opacity: 0.5;
-  animation-duration: .6s;
+  transition: 0.3s;
   min-width: 50px;
   border: none;
+  font-family: VT323, monospace;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-
-/*
 * {
   border: 1px solid red;
 }
